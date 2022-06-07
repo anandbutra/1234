@@ -1,0 +1,38 @@
+Started by user [8mha:////4NPpEwh6W6PHNA9YCHXGF2TWni42fhU7M8LLfBCJCyPkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0manand
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/development
+The recommended git tool is: NONE
+using credential b99ad35f-5180-46c5-9682-b39c2f5b7be4
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/development/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/anandbutra/sample_custmer_app.git # timeout=10
+Fetching upstream changes from https://github.com/anandbutra/sample_custmer_app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/anandbutra/sample_custmer_app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8e9ae1633a56d304e5e4f142315dbf1af2256feb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8e9ae1633a56d304e5e4f142315dbf1af2256feb # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+[development] $ mvn clean package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.145 s
+[[1;34mINFO[m] Finished at: 2022-05-29T19:18:42Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] The goal you specified requires a project to execute but there is no POM in this directory (/var/lib/jenkins/workspace/development). Please verify you invoked Maven from the correct directory. -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Archiving artifacts
+[DeployPublisher][INFO] Build failed, project not deployed
+Finished: FAILURE

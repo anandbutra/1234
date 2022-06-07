@@ -1,0 +1,13 @@
+Started on Jun 2, 2022 7:13:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 1296062e88b39f481259dfafc9ac6ba8977f65e9 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+using credential b99ad35f-5180-46c5-9682-b39c2f5b7be4
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h -- https://github.com/anandbutra/devops_project3.git # timeout=10
+Found 3 remote heads on https://github.com/anandbutra/devops_project3.git
+[poll] Latest remote head revision on refs/heads/master is: fccd40107972c0ea53def79c91d99ec9a6fcec39
+Done. Took 0.16 sec
+Changes found

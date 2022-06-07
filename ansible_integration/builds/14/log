@@ -1,0 +1,67 @@
+Started by user [8mha:////4NPpEwh6W6PHNA9YCHXGF2TWni42fhU7M8LLfBCJCyPkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0manand
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/ansible_integration
+The recommended git tool is: NONE
+using credential b99ad35f-5180-46c5-9682-b39c2f5b7be4
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/ansible_integration/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/anandbutra/jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/anandbutra/jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/anandbutra/jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7dd528bac2abd875bb090aed97bcd2b0b72f13d1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7dd528bac2abd875bb090aed97bcd2b0b72f13d1 # timeout=10
+Commit message: "Update index.jsp"
+ > git rev-list --no-walk 7dd528bac2abd875bb090aed97bcd2b0b72f13d1 # timeout=10
+[ansible_integration] $ mvn clean package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mcom.citi:citibank[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding citibank Maven Webapp 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mcitibank[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/ansible_integration/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcitibank[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/ansible_integration/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mcitibank[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcitibank[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/ansible_integration/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mcitibank[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mcitibank[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:2.2:war[m [1m(default-war)[m @ [36mcitibank[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [citibank] in [/var/lib/jenkins/workspace/ansible_integration/target/citibank]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/ansible_integration/src/main/webapp]
+[[1;34mINFO[m] Webapp assembled in [43 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/ansible_integration/target/citibank.war
+[[1;34mINFO[m] WEB-INF/web.xml already added, skipping
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.439 s
+[[1;34mINFO[m] Finished at: 2022-05-27T17:17:18Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+SSH: Connecting from host [ip-172-31-28-224]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: EXEC: completed after 3,003 ms
+SSH: EXEC: completed after 2,602 ms
+SSH: Disconnecting configuration [ansible_server] ...
+SSH: Transferred 0 ( 0 + 0 ) file(s)
+Finished: SUCCESS

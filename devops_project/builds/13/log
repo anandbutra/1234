@@ -1,0 +1,246 @@
+Started by user [8mha:////4NPpEwh6W6PHNA9YCHXGF2TWni42fhU7M8LLfBCJCyPkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0manand
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/devops_project
+The recommended git tool is: NONE
+using credential b99ad35f-5180-46c5-9682-b39c2f5b7be4
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops_project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/anandbutra/devops_project3.git # timeout=10
+Fetching upstream changes from https://github.com/anandbutra/devops_project3.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/anandbutra/devops_project3.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 33f2158677f9c307bd141f2236f1a3334cc2f9b1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 33f2158677f9c307bd141f2236f1a3334cc2f9b1 # timeout=10
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 33f2158677f9c307bd141f2236f1a3334cc2f9b1 # timeout=10
+[devops_project] $ mvn clean package
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:server:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:webapp:war:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:maven-project:pom:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 51, column 24
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] The project com.example.maven-project:maven-project:pom:1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project                                                      [pom]
+[[1;34mINFO[m] Server                                                             [jar]
+[[1;34mINFO[m] Webapp                                                             [war]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36mcom.example.maven-project:maven-project[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Maven Project 1.0-SNAPSHOT                                [1/3][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mmaven-project[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.example.maven-project:server[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding Server 1.0-SNAPSHOT                                       [2/3][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/devops_project/server/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mserver[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/devops_project/server/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Compiling 1 source file to /var/lib/jenkins/workspace/devops_project/server/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mserver[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/devops_project/server/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Compiling 1 source file to /var/lib/jenkins/workspace/devops_project/server/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.11:test[m [1m(default-test)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /var/lib/jenkins/workspace/devops_project/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.TestGreeter
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/lib/jenkins/workspace/devops_project/server/target/server.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.example.maven-project:webapp[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding Webapp 1.0-SNAPSHOT                                       [3/3][m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/devops_project/webapp/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mwebapp[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/devops_project/webapp/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mwebapp[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/devops_project/webapp/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.11:test[m [1m(default-test)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] Surefire report directory: /var/lib/jenkins/workspace/devops_project/webapp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:2.2:war[m [1m(default-war)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [webapp] in [/var/lib/jenkins/workspace/devops_project/webapp/target/webapp]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/devops_project/webapp/src/main/webapp]
+[[1;34mINFO[m] Webapp assembled in [31 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/devops_project/webapp/target/webapp.war
+[[1;34mINFO[m] WEB-INF/web.xml already added, skipping
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Maven Project 1.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project ...................................... [1;32mSUCCESS[m [  0.311 s]
+[[1;34mINFO[m] Server ............................................. [1;32mSUCCESS[m [  3.346 s]
+[[1;34mINFO[m] Webapp ............................................. [1;32mSUCCESS[m [  0.784 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  4.706 s
+[[1;34mINFO[m] Finished at: 2022-06-02T17:47:36Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+SSH: Connecting from host [ip-172-31-28-224]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: Creating session: username [ubuntu], hostname [172.31.26.103], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening SFTP channel ...
+SSH: SFTP channel open
+SSH: Connecting SFTP channel ...
+SSH: Connected
+SSH: cd [//opt/docker]
+SSH: OK
+SSH: cd [//opt/docker]
+SSH: OK
+SSH: cd [/opt/docker]
+SSH: OK
+SSH: cd [webapp/target]
+SSH: OK
+SSH: put [webapp.war]
+SSH: OK
+SSH: cd [//opt/docker]
+SSH: OK
+SSH: cd [/opt/docker]
+SSH: OK
+SSH: put [Dockerfile]
+SSH: OK
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [cd /opt/docker
+docker build -t anand_demo .
+docker tag anand_demo butra1998/anand_demo
+docker push butra1998/anand_demo
+docker rmi anand_demo butra1998/anand_demo] ...
+SSH: EXEC: connected
+Sending build context to Docker daemon  6.144kB
+Step 1/3 : From tomcat:8-jre8
+ ---> 1ea180804613
+Step 2/3 : MAINTAINER "anand_butra"
+ ---> Using cache
+ ---> edd7f464ff3c
+Step 3/3 : COPY /webapp/target/webapp.war /usr/local/tomcat/webapps
+ ---> 0b61bbc84a5e
+Successfully built 0b61bbc84a5e
+Successfully tagged anand_demo:latest
+Using default tag: latest
+The push refers to repository [docker.io/butra1998/anand_demo]
+3798d6447428: Preparing
+ff90c8b98817: Preparing
+43df9e0a2512: Preparing
+18978897d846: Preparing
+2cae8a8b7e6a: Preparing
+779aaa8c59e7: Preparing
+402d7e22228b: Preparing
+559cbf940e98: Preparing
+9177197c67d0: Preparing
+7dbadf2b9bd8: Preparing
+e7597c345c2e: Preparing
+779aaa8c59e7: Waiting
+402d7e22228b: Waiting
+559cbf940e98: Waiting
+9177197c67d0: Waiting
+7dbadf2b9bd8: Waiting
+e7597c345c2e: Waiting
+denied: requested access to the resource is denied
+Untagged: anand_demo:latest
+Untagged: butra1998/anand_demo:latest
+Deleted: sha256:0b61bbc84a5edbf7ff6f97943dc7d3d8dff4627f98286bdf8b577b66ed48ff3d
+Deleted: sha256:92e14dafc848b8e5a4a214409d774987366c4ae7a17a9d1b46c130c5017869d2
+SSH: EXEC: completed after 606 ms
+SSH: Disconnecting configuration [ansible_server] ...
+SSH: Transferred 2 ( 1 + 1 ) file(s)
+SSH: Connecting from host [ip-172-31-28-224]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: Creating session: username [ubuntu], hostname [172.31.26.103], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [cd //etc/ansible
+ansible-playbook create_docker_container.yml] ...
+SSH: EXEC: connected
+[WARNING]: Ansible is being run in a world writable directory (/etc/ansible),
+ignoring it as an ansible.cfg source. For more information see
+https://docs.ansible.com/ansible/devel/reference_appendices/config.html#cfg-in-
+world-writable-dir
+
+PLAY [creatig docker conatiner using yomcat docker imagege] ********************
+
+TASK [Gathering Facts] *********************************************************
+ok: [172.31.30.171]
+
+TASK [EXUCUTING docker shell] **************************************************
+fatal: [172.31.30.171]: FAILED! => {"changed": true, "cmd": "docker run --name butra -d -p 8888:8080 butra1988/anand_demo", "delta": "0:00:00.073775", "end": "2022-06-02 17:47:42.639209", "msg": "non-zero return code", "rc": 126, "start": "2022-06-02 17:47:42.565434", "stderr": "docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post \"http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create?name=butra\": dial unix /var/run/docker.sock: connect: permission denied.\nSee 'docker run --help'.", "stderr_lines": ["docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post \"http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create?name=butra\": dial unix /var/run/docker.sock: connect: permission denied.", "See 'docker run --help'."], "stdout": "", "stdout_lines": []}
+
+PLAY RECAP *********************************************************************
+172.31.30.171              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+SSH: EXEC: completed after 4,604 ms
+SSH: Disconnecting configuration [ansible_server] ...
+ERROR: Exception when publishing, exception message [Exec exit status not zero. Status [2]]
+Build step 'Send build artifacts over SSH' changed build result to UNSTABLE
+Finished: UNSTABLE

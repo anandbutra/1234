@@ -1,0 +1,45 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1182.v60a_e6279b_579">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2086.v12b_420f036e5">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2706.v71dd22b_c5a_a_2">
+    <script>pipeline
+    {
+    agent any
+    stages
+      {
+        stage(&quot;continues download&quot;){
+            steps{
+               git credentialsId: &apos;b99ad35f-5180-46c5-9682-b39c2f5b7be4&apos;, url: &apos;https://github.com/anandbutra/maven.git&apos;
+                 }
+      }
+         stage(&quot;continues build&quot;)
+         {
+            steps{
+sh &apos;mvn clean package&apos;
+         }
+        }
+         stage(&quot;continues built&quot;)
+         {
+            steps{
+         sh &apos;scp -o /var/lib/jenkins/workspace/CI/webapp/target/webapp.war  ubuntu@172.31.30.171:/opt/apache-tomcat-9.0.63/webapps&apos;
+         }
+        }
+        
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

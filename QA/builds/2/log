@@ -1,0 +1,27 @@
+Started by user [8mha:////4NPpEwh6W6PHNA9YCHXGF2TWni42fhU7M8LLfBCJCyPkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0manand
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/QA
+The recommended git tool is: NONE
+using credential b99ad35f-5180-46c5-9682-b39c2f5b7be4
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/QA/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/anandbutra/selinum-testing-.git # timeout=10
+Fetching upstream changes from https://github.com/anandbutra/selinum-testing-.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/anandbutra/selinum-testing-.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 860b74f292b93784df4130ef72223a5fbbb1a107 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 860b74f292b93784df4130ef72223a5fbbb1a107 # timeout=10
+Commit message: "A"
+ > git rev-list --no-walk 860b74f292b93784df4130ef72223a5fbbb1a107 # timeout=10
+[QA] $ /bin/sh -xe /tmp/jenkins8844434937848121881.sh
++ java -jar testing.jar
+about:blank
+Expected Message : Hello, World!
+Actual Message   : 
+Testing has Failed
+ERROR: Failed to copy artifacts from development with filter: **/*.war
+Finished: FAILURE
